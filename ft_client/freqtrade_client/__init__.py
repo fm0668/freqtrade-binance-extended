@@ -1,7 +1,6 @@
 from freqtrade_client.ft_rest_client import FtRestClient
 
-
-__version__ = "2025.4-dev"
+__version__ = "2025.4.0a1"  # Alpha版本，支持币安扩展K线数据
 
 if "dev" in __version__:
     from pathlib import Path
