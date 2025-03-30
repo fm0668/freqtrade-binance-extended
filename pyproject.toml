@@ -11,7 +11,7 @@ authors = [
   {name = "Freqtrade Team", email = "freqtrade@protonmail.com"},
 ]
 
-description = "Freqtrade - Crypto Trading Bot with Extended Binance Support"
+description = "Freqtrade - Crypto Trading Bot with Extended Binance K-line Data Support"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "GPLv3"}
@@ -132,9 +132,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/freqtrade/freqtrade"
+Homepage = "https://github.com/fm0668/freqtrade-binance-extended"
 Documentation = "https://freqtrade.io"
-"Bug Tracker" = "https://github.com/freqtrade/freqtrade/issues"
+"Bug Tracker" = "https://github.com/fm0668/freqtrade-binance-extended/issues"
 
 
 [project.scripts]
@@ -146,8 +146,8 @@ zip-safe = false
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["freqtrade*"]
-exclude = ["tests", "tests.*", "user_data", "user_data*"]
+include = ["freqtrade*", "ft_client*"]
+exclude = ["tests", "tests.*", "user_data", "user_data*", "docker", "config_examples", "build_helpers", "docs", "scripts"]
 namespaces = true
 
 [tool.setuptools.dynamic]
