@@ -1,6 +1,6 @@
 """Freqtrade bot"""
 
-__version__ = "2025.4-binance-extended"
+__version__ = "2025.4.0a1"  # Alpha版本，支持币安扩展K线数据
 
 if "dev" in __version__:
     from pathlib import Path
